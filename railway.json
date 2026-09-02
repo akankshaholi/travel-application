@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "cd backend && ./mvnw spring-boot:run"
+    "startCommand": "java -Dserver.port=$PORT -jar backend/target/backend-0.0.1-SNAPSHOT.jar"
   }
 }
