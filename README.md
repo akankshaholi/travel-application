@@ -181,9 +181,3 @@ The frontend starts on `http://localhost:5173` (or `5174`).
 
 ---
 
-## 🚢 Recommended Production Deployment Architecture
-
-* **Frontend**: Deploy static Vite build (`dist/`) to **Vercel**, **Netlify**, or **AWS S3 + CloudFront**.
-* **Backend**: Deploy Spring Boot JAR to **AWS Elastic Beanstalk**, **Render**, **Heroku**, or **Docker/K8s**.
-* **Database**: Managed **AWS RDS MySQL** or **PlanetScale**.
-* **Environment Variables**: Store `OPENWEATHER_API_KEY`, `PEXELS_API_KEY`, and `GEMINI_API_KEY` securely in cloud environment variable settings (never exposed to client).
